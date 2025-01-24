@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'poppins'; 
+    src: url('fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'roboto'; 
+    src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'bison'; 
+  src: url('fonts/bison-bold.ttf');
+}
+
+
+
+
+ul {
+    top:0px;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0%;
+    margin-bottom: 0%;
+    overflow: hidden;
+    background-color: #3A5A40;
+    width:100vw;
+    overflow-x: hidden;
+    font-size: 25px;
+    }
+
+li {
+    float: left;
+    width:20vw;
+    height:100px;
+}
+
+li a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width:20vw;
+    height:100px;
+    font-family: 'poppins';  
+}
+
+li img {
+    position: relative;
+    left: 6vw;
+    align-items: center;
+    align-items: center;
+    height: 95%;
+    @media only screen and (max-width:700px){
+        width: 10vw;
+        height: auto;
+        top: 25%;
+    }
+
+}
+
+li a:hover {
+    background-color: #344E41;
+}
+
+
+.topbutton:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+} 
+
+.homebutton{
+  display: block;
+  position: relative;
+  left: 4.5vw;
+  bottom: 5vw;
+  height: 30px;
+  width: 90vw;
+  z-index: 999999999;
+  border: 0;
+  background: #3A5A40;
+  color: #fff;
+  padding: 0.68em;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  border: #588157;
+  border-style: solid;
+  text-decoration: none;
+}
+
+.homebutton:hover {
+  opacity: 0.9;
+} 
+
+
+/* MAIN BODIES */
+body{
+  background-color: #DAD7CD;
+  color: #3A5A40;
+  position: absolute;
+  font-size: 20px;
+  font-family: 'poppins';
+  overflow: hidden;
+  margin-left: 0px;
+  margin-top: 0%;
+}
+
+.card {
+    margin-top: 0;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    width: 25vw;
+    height: 17vw;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #DAD7CD;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .card > * {
+    margin: 0;
+  }
+  
+  .card__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: #3A5A40;
+    text-align: left;
+  }
+  
+  .card__content {
+    font-size: 18px;
+    line-height: 22px;
+    color: #3A5A40;
+  }
+  
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.8;
+  } 
+
+
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .background_image{
+    width: 100vw;
+    margin-top:0%;
+  }
+
+
+
+
+  .hometable{
+    margin-top: 150px;
+    overflow-x: hidden;
+  }
+
+
+
+  

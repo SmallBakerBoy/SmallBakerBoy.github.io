@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='CSS files/home.css'>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/x-icon" href="Icons/favicon.png">
+        <title>Forest Shot</title>
+    </head>
+<body>
+    <a id="top"></a>
+    <button onclick="topFunction()" class="topbutton" id="topbutton">Back To Top</button>
+    <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><img src= "Icons/logo no bg.png" alt="logo"></li>
+        <li><a href="can.html">About The Can</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class = 'container'><img class = 'background_image' src='Icons/Home_Background.jpg'><div class="main_title">&nbsp;  FOREST SHOT      &nbsp;</div></div>
+      <div>
+        <span class="quote"> "The Earth is what we all have in common" Wendell Berry</span>
+        <table>
+        <tr>
+        <td width="50%">
+        <p style="position: relative; top: 100px; left: 50px; font-size: 25px;"> Welcome to Forest Shot, where innovation takes flight to protect the world’s forests. Our satellite technology utilises artificial intelligence to provide real-time monitoring of forest ecosystems, enabling the early detection of deforestation, illegal logging, and environmental threats. Forests are vital to our planet—they store carbon, sustain biodiversity, and regulate global climates. By leveraging modern technology, we can safeguard these precious resources, ensuring their health and resilience for future generations. Together, we can use the power of science to preserve the lungs of our Earth and secure a greener, more sustainable future.</p>
+        </td>
+        <td width="50%">
+        <img src="Icons/green world.png" class="home_img">
+        </td>
+        </tr>
+        </table>
+      </div> 
+      <table class="hometable">
+        <tr>
+            <td>
+                <div class="card">
+                    <span class="card__title">Subscribe</span>
+                    <p class="card__content">Be the first to hear the latest news on our latest developments</p>
+                    <div class="card__form">
+                        <input placeholder="Your Email" type="text">
+                        <button class="sign-up"> Sign up</button>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <span class="card__title">Meet Our Team</span>
+                    <p class="card__content">Find out about each of our roles in the team and a fun fact about each of us!</p>
+                    <div class="card__form"> 
+                        <a href='team.html' class="sign-up"> Find out more</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <span class="card__title">AI Forest Segmentation</span>
+                    <p class="card__content">Check out how our forest segmentation AI was made!</p>
+                    <div class="card__form"> 
+                        <a href="can.html" class="sign-up"> Find out more</button>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                <span class="card__title">Community Outreach Program</span>
+                <p class="card__content">See how we are working with the local community and forestry commission to make a difference!</p>
+                <div class="card__form"> 
+                    <a href='mission.html' class="sign-up"> Find out more</a>
+                </div>
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                <span class="card__title">Can Stress Testing</span>
+                <p class="card__content">To test its structural integrity we put our can through various rigorous tests</p>
+                <div class="card__form"> 
+                    <a href='blog.html' class="sign-up"> Find out more</a>
+                </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+<div class="footer">
+    <table class='footer_info'>
+        <tr>
+            <th>Pages</th>
+        </tr>
+        <tr>
+            <td><a href="#top" class="footer_link">Home</a></td>
+            <td><a href="team.html" class="footer_link">Meet Our Team</a></td>
+            <td><a href="mission.html" class="footer_link">Our Mission</a></td>
+        </tr>
+        <tr>
+            <td><a href="blog.html" class="footer_link">Blog</a></td>
+            <td><a href="contact.html" class="footer_link">Contact Us</a></td>
+            <td><a href="can.html" class="footer_link">About The Can</a></td>
+        </tr>
+    </table>
+    <hr class="footer-div">
+    <table class="footer_info" style="font-size: 15px; position:absolute; bottom:5px; left: 16vw;">
+        <tr> 
+            <td> English (British English) •</td>
+            <td> Terms of use •</td>
+            <td> Privacy and Cookies </td>
+        </tr>
+    </table>
+</div>
+</html> 
+
+<script>
+    let mybutton = document.getElementById("topbutton");
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        mybutton.style.display = "block";
+        }
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        mybutton.style.display = 'none';
+    }
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='CSS files/home.css'>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" type="image/x-icon" href="Icons/favicon.png">
+        <title>Forest Shot</title>
+    </head>
+<body>
+    <button onclick="topFunction()" class="topbutton" id="topbutton">Back To Top</button>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><img src= "Icons/logo no bg.png" alt="logo"></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+</body>
+</html>
+
+<script>
+    let mybutton = document.getElementById("topbutton");
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        mybutton.style.display = "block";
+        }
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        mybutton.style.display = 'none'
+    }
+</script>
