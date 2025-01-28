@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'poppins'; 
+    src: url('fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'roboto'; 
+    src: url('fonts/Roboto-Medium.ttf');
+}
+
+
+
+
+ul {
+    top:0px;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 0%;
+    margin-bottom: 0%;
+    overflow: hidden;
+    background-color: #3A5A40;
+    width:100vw;
+    overflow-x: hidden;
+    font-size: 25px;
+    }
+
+li {
+    float: left;
+    width:20vw;
+    height:100px;
+}
+
+li a {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width:20vw;
+    height:100px;
+    font-family: 'poppins';  
+}
+
+li img {
+    position: relative;
+    left: 6vw;
+    align-items: center;
+    align-items: center;
+    height: 95%;
+    @media only screen and (max-width:700px){
+        width: 10vw;
+        height: auto;
+        top: 25%;
+    }
+
+}
+
+li a:hover {
+    background-color: #344E41;
+}
+
+.topbutton{
+    display: none;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    height: 50px;
+    width: 100px;
+    z-index: 999999999;
+    border: 0;
+    background: #3A5A40;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 20px;
+    font-weight: bold;
+    border: #588157;
+    border-style: solid;
+  }
+  
+  .topbutton:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+  } 
+
+body{
+background-color: #DAD7CD;
+color: whitesmoke;
+position: absolute;
+font-size: 20px;
+font-family: 'poppins';
+
+margin-left: 0px;
+margin-top: 0%;
+overflow-x: hidden;
+}
+
+
+.band_1{
+    width: 100%;
+    height: 30vw;
+    background-color: #588157;
+    display: flex;
+    top: auto;
+    bottom: auto;
+
+}
+
+.band_2{
+    width: 100%;
+    height: 30vw;
+    background-color: #3A5A40;
+}
+
+
+
+
+

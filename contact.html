@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
         <link rel='stylesheet' href='CSS files/contact.css'>
         <link rel="icon" type="image/x-icon" href="Icons/favicon.png">
         <meta charset="UTF-8"/>
@@ -17,15 +18,22 @@
         <li><a href="can.html">About The Can</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
-    <div><h1>Get in touch</h1>
-    <form>
-        <input placeholder="Email">
-        <input placeholder="Subject">
-        <input placeholder="Message">
-        <input type="submit">
-    </form>
-    <h1>Or message us on:</h1>
-    <a href="instagram.com/forestshot2024"><img src="Icons/instagram.svg" style="width:100px; color: #588157;"></a>
+    <div>   
+        <div class="card" style="top: 3vw;">   
+        <h1>Get in touch</h1>
+        <table><tr><td><input placeholder="Email..." class="short" id="returnemail"></td> <td><input placeholder="Subject..." class="short" id="subject"></td></tr></table>
+        <textarea rows='10' prompt="Message..." class="long" id='content'></textarea>
+        <button class="submitbutton" id='sendemail' onclick="email()">Submit</button>
+        </div> 
+    <div class='card' style="position: relative; top: 3vw;">
+    <h1 style="position: relative;  top: 10vw;">Or message us on:</h1>
+    <table>
+        <tr>
+            <td><a href="https://www.instagram.com/forest_shot2024/#" class="socials"><img src="Icons/instagram.svg" alt="instagram Icon" style="width: 100%;"></a></td>
+            <td><a onclick="copy()" class="email_icon"><img src="Icons/email.svg" alt="Email Icon" style="width: 100%;"><span id='email_tt'>forest_shots2024@gmail.com</span></a></td>
+        </tr>
+    </table>
+    </div>
     </div>
 </body>
 </html>
@@ -47,5 +55,36 @@
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0; 
         mybutton.style.display = 'none';
+    }
+
+    function email() {
+        document.getElementById('sendemail').innerHTML='Sent!'
+        let returnemail = document.getElementById('returnemail')
+        let subject = document.getElementById('subject')
+        let content = document.getElementById('content')
+        let email = {
+            to_name: 'forestshots2024@gmail.com',
+            from_name: 'forestshots2024@gmail.com',
+            message_html: content + ' From the email: '+returnemail,
+        }
+        let keys = { 
+            publicKey: '87cp_0Tuss73dnAwZ',
+            privateKey: 'fdgoJpEUmcydiGxuK_eaI',
+        }
+        emailjs.send('service_du23w5s','template_4p0al4o',email,keys)
+        .then(
+        (response) => {
+            console.log("Email SUCCESS!", response.status, response.text);
+        },
+        (err) => {
+            console.log("Email FAILED...", err);
+        }
+        );
+    }
+
+    function copy(){
+        let tooltip = document.getElementById('email_tt')
+        navigator.clipboard.writeText(tooltip.innerHTML)
+        tooltip.innerHTML = 'Copied!'
     }
 </script>

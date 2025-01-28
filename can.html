@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel='stylesheet' href='CSS files/home.css'>
+        <link rel='stylesheet' href='CSS files/can.css'>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,6 +9,7 @@
         <title>Forest Shot</title>
     </head>
 <body>
+    <a id="top"></a>
     <button onclick="topFunction()" class="topbutton" id="topbutton">Back To Top</button>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -16,9 +17,58 @@
         <li><img src= "Icons/logo no bg.png" alt="logo"></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+    </ul>
+    <div class='band_1'>
+    <table>
+        <tr>
+            <td style="padding: 5vw;"><h1>Robust Design</h1><p>Our Can is a fat cow which is in a 4 part wave function due to two beam splitters working in colaberation with big math operatives</p></td>
+            <td style="float: right;"><img src="Icons/can 2 part.png"></td>
+        </tr>
+    </table>
+    </div>
+    <div class='band_2'>
+    <table>
+        <tr>
+            <td><img src="Icons/3d printer.png"></td>
+            <td><h1>Sustainable Materials</h1><p>Our Can is exclusively created through sustainable and renewable materials. We chose PLA due to its ease of recycling and green source.</p></td>
+        </tr>
+    </table>
+    </div>
+    <div class='band_1'>
+    <table>
+        <tr>
+            <td style="padding: 5vw;"><h1>Modular Design</h1><p>Our Can uses friction fits and removable bolts to secure the two parts, this means that if there is any damage we can easily swap out the affected section instead of replacing the entire can.</p></td>
+            <td><img src="Icons/can fit together.png"></td>
+        </tr>
+    </table>
+    </div>
+    <div class='band_2'>
+    <table>
+        <tr>
+            <td><img src="Icons/circuit.png"></td>
+            <td style="padding: 5vw;"><h1>Compact Components</h1><p>Our internal components such as the pcb show have been designed to reduce the amount of space used. </p></td>
+        </tr>
+    </table>
+    </div>
+    <div class='band_1'>
+    <table>
+        <tr>
+            <td style="padding: 5vw;"><h1>Hand Crafted Parachute</h1><p>Our parachute is tightly held together by double french seams.</p></td>
+            <td><img src="Icons/parachute.png" style='position: relative; top: -3vw; left: 3vw;'></td>
+        </tr>
+    </table>
+    </div>
+    <div class='band_2'>
+    <table>
+        <tr>
+            <td><img src="Icons/tensorflow.png" style="height: 80%;"></td>
+            <td><h1>AI powered software</h1><p>Our forest segmentation software is powered by a tensorflow neural network</p></td>
+        </tr>
+    </table>
+    </div>
+    
 </body>
-</html>
+</html> 
 
 <script>
     let mybutton = document.getElementById("topbutton");
@@ -36,6 +86,6 @@
     function topFunction() {
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0; 
-        mybutton.style.display = 'none'
+        mybutton.style.display = 'none';
     }
 </script>

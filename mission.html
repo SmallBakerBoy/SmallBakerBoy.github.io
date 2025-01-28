@@ -9,6 +9,7 @@
         <title>Forest Shot</title>
     </head>
 <body>
+    <a id="top"></a>
     <button onclick="topFunction()" class="topbutton" id="topbutton">Back To Top</button>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -17,25 +18,36 @@
         <li><a href="can.html">About The Can</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <div class = 'container'><img class = 'background_image' src='Icons/Home_Background.jpg'><div class="main_title">&nbsp;  FOREST SHOT      &nbsp;</div></div>
+      <div>
+        <span class="quote">“Look deep into nature, and then you will understand everything better.” Albert Einstein</span>
+        <table>
+        <tr>
+        <td width="50%">
+        <p style="position: relative; top: 100px; left: 50px; font-size: 25px;">Here at Forest Shot, We believe that space exploration can be used to improve our life here at earth. We want to take this opportunity to provide innovative and future proof solutions to aid our environment in a time of technological advancement. Exploring into space is an opportunity to look forward to the future but also to look back at our home </p>
+        </td>
+        <td width="50%">
+        <img src="Icons/hand world.png" class="home_img">
+        </td>
+        </tr><tr>
+        <td width="50%">
+        <img src="Icons/neural network.png" class="home_img">
+        </td>
+        <td width="50%">
+        <p style="position: relative; top: 100px;  right: 25px;  font-size: 25px;">Our team is dedicated to leveraging cutting-edge technology to advocate for environmental protection by capturing high-resolution images of forests from space. Our satellite, a compact yet advanced can-sized design, is equipped with a modern imaging system capable of capturing photographs from high altitudes. Utilizing advanced these cameras , we aim to record the forest landscapes. These images will then be processed through artificial intelligence (AI) algorithms, which will analyze and identify patterns, including areas of deforestation, changes in forest density, and biodiversity indicators. By integrating AI with computer mapping programs, we will transform the raw data into comprehensive, maps that highlight critical environmental changes over time. By deploying this satellite, we aim to inspire proactive measures toward forest conservation and emphasize the urgency of protecting these vital ecosystems. Our mission combines technology, science, and advocacy to make a meaningful impact on preserving our planet's green lungs for generations to come.</p>
+        </td>
+        </tr><tr>
+            <td width="50%">
+            <h1 style="text-align: center;">Community Outreach</h1>
+            <p style="position: relative; top: 0px; left: 50px; font-size: 25px;">We have multiple community outreach programmes to spread our project. We have setup this website and a instagram page to show off our latest developments and progress to interested parties. For our local community we have setup a assembly to educate local primary school children. We have also been in communication with a local forestry board to find out what we can do to help, we'll update you about this in the future! We hope by spreading our goals, we will inspire the future generation to take action and to show them that everyone can make a difference and help our world while we can.</p>
+            </td>
+            <td width="50%">
+            <img src="Icons/newspaper.png" class="home_img" style="width: 25vw; left: 15vw;">
+            </td>
+            </tr>
+        </table>
+      </div> 
+      
+    
 </body>
 </html>
-
-<script>
-    let mybutton = document.getElementById("topbutton");
-
-
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-        mybutton.style.display = "block";
-        }
-    }
-
-
-    function topFunction() {
-        document.body.scrollTop = 0; 
-        document.documentElement.scrollTop = 0; 
-        mybutton.style.display = 'none'
-    }
-</script>

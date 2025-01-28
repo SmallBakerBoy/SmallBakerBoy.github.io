@@ -133,7 +133,7 @@ body{
     background: #fff;
     border-radius: 20px;
     position: relative;
-    transition-duration: 4s;
+    transition-duration: 2s;
   }
   
   .card > * {

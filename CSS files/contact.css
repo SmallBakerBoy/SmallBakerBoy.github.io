@@ -11,6 +11,8 @@
 
 
 
+
+
 ul {
     top:0px;
     list-style-type: none;
@@ -137,10 +139,21 @@ body{
     overflow-x: hidden;
 }
 
+h1 {
+  margin-left: 10vw;
+}
+
+.iconic{
+  margin-left: 5vw;
+  width: 100px;
+  height: auto;
+}
+
 .card {
-    width: 16vw;
-    height: 254px;
+    width: 80vw;
+    height: 400px;
     margin: 0.96vw;
+    margin-left: 8vw;
     padding: 0 15px;
     text-align: center;
     display: flex;
@@ -235,3 +248,97 @@ body{
     border-width: 10px;
     border-color: #fff;
   }
+
+  input.short {
+    position: relative;
+    padding: 10px;
+    width:35vw;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    border: #588157;
+    border-style: solid;
+    border-width: 2px;
+    color: #3A5A40;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .long {
+    padding: 10px;
+    width: 90%;
+    height: 150px;
+    outline: none;
+    border: none;
+    background-color: #D3D3D3;
+    border-radius: 10px ;
+    border: #588157;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15x;
+    color: #3A5A40;
+    resize: none;
+  }
+
+  .submitbutton{
+    display: block;
+    position: relative;
+    height: auto;
+    width: 92%;
+    z-index: 999999999;
+    border: 0;
+    background: #3A5A40;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    border: #588157;
+    border-style: solid;
+    text-decoration: none;
+  }
+
+.submitbutton:hover{
+  opacity: 0.9;
+}
+
+.socials{
+  width: 100px;
+}
+
+
+.email_icon{
+  width: 100px;
+  position: relative;
+  top: 1vw;
+}
+
+#email_tt{
+  visibility: hidden;
+  position: absolute;
+  background-color: #588157;
+  color: #dadada;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  right: 11vw;
+  top: -31vw;
+}
+
+.email_icon:hover #email_tt{
+  visibility: visible;
+}
+
+.email_icon #email_tt::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #588157 transparent transparent transparent;
+}
