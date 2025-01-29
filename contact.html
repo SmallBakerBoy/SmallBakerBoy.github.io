@@ -67,11 +67,8 @@
             from_name: 'forestshots2024@gmail.com',
             message_html: content + ' From the email: '+returnemail,
         }
-        let keys = { 
-            publicKey: '87cp_0Tuss73dnAwZ',
-            privateKey: 'fdgoJpEUmcydiGxuK_eaI',
-        }
-        emailjs.send('service_du23w5s','template_4p0al4o',email,keys)
+        emailjs.init('service_du23w5s','template_4p0al4o','7w1qig2vwg2CxRRgO')
+        emailjs.send(email)
         .then(
         (response) => {
             console.log("Email SUCCESS!", response.status, response.text);
